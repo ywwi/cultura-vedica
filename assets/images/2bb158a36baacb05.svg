@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="Camada_1" data-name="Camada 1">
+    <g>
+      <rect x="0.5" y="0.5" width="191" height="191"/>
+      <path d="M191,1V191H1V1H191m1-1H0V192H192V0Z"/>
+    </g>
+  </g>
+  <g id="Camada_2" data-name="Camada 2">
+    <path class="cls-1" d="M106.96,97.76367V156.2168h-15.957V101.03906L22.55566,35.7832H41.78809l63.15625,60.88868L166.50488,35.7832h2.93946Z"/>
+  </g>
+</svg>
