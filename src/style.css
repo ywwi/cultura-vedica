@@ -1,0 +1,548 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #ffffff #000000;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #000000;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #ffffff;
+    border-radius: 0px;
+    border: 4px solid #ffffff;
+  }
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+ul{
+    list-style: none;
+}
+
+::-moz-selection{
+    color: black;
+    background: whitesmoke;
+}
+  
+::selection{
+    color: black;
+    background: whitesmoke;
+}
+
+@font-face {
+    font-family: 'Suisse';
+    src: url('./assets/fonts/SuisseIntl-Light.woff2');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Suisse';
+    src: url('./assets/fonts/SuisseIntl-Regular.woff2');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Suisse';
+    src: url('./assets/fonts/SuisseIntl-Medium.woff2');
+    font-weight: 500;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+html,
+body
+{
+    font-family: 'Suisse';
+    color: white;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+
+body{
+    position: relative;
+    overflow-x: hidden;
+}
+
+.webgl
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    outline: none;
+}
+
+/* Sections */
+
+/* Section 1 */
+section.first{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem;
+    user-select: none;
+    padding: 4rem;
+    cursor: pointer;
+}
+
+.fh1{
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 5rem;
+    text-align: center;
+    mix-blend-mode: difference;
+    width: 100%;
+}
+
+.d-a{
+    width: 1%;
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    transform: translate(-50%, -50%);
+    animation: test 1.5s infinite linear;
+}
+
+@keyframes test {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(50%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
+
+h3.fh3{
+    text-align: center;
+    mix-blend-mode: difference;
+    font-weight: 300;
+    visibility: visible;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    width: 100%;
+    color: white;
+    mix-blend-mode: difference;
+}
+
+.div{
+    display: flex;
+    margin: 3.5rem 16rem 0 16rem;
+    justify-content: space-between;
+}
+
+.wordmarklogo > h3 {
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+ul.navigation{
+    text-transform: uppercase;
+}
+
+li.links:not(:first-child){
+    margin-top: 0.8rem;
+}
+
+/* Section 2 */
+section.second{
+    width: 100%;
+    height: 100vh;
+    padding: 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.ti{
+    text-align: center;
+}
+.title{
+    font-weight: 500;
+    font-size: 3rem;
+}
+
+.ti-2{
+    text-align: left;
+    margin-top: 5rem;
+}
+
+.title-2{
+    font-weight: 400;
+}
+
+.sub-title-2{
+    font-weight: 300;
+    margin-top: 5px;
+}
+
+.sub-title{
+    font-weight: 300;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.content{
+    display: flex;
+    align-items: center;
+}
+
+.right{
+    width: 100%;
+    margin-left: 1.5rem;
+}
+
+.text{
+    font-size: 1.6rem;
+    margin: 2rem 1rem 2rem 0;
+    text-align: justify;
+}
+
+.text-2{
+    font-size: 1.6rem;
+    margin: 1rem 1rem 2rem 0;
+    text-align: justify;
+}
+
+.imgs{
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+span{
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.p{
+    font-weight: bold;
+}
+
+.patanjali{
+    list-style-type: disc;
+    margin-left: 2rem;
+    font-size: 1.2rem;
+}
+
+.patanjali:not(:first-child){
+    margin-top: 0.8rem;
+}
+
+.number{
+    list-style-type: decimal;
+}
+
+.hide{
+    transition: 0.7s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+@media screen and (max-width: 1024px){
+    .webgl
+    {
+        display: none;
+    }
+
+    header{
+        display: none;
+    }
+
+    section.first{
+        cursor: unset;
+    }
+
+    section.second{
+        height: 120vh;
+    }
+
+    section.second:last-child{
+        height: 100vh;
+    }
+
+    .right{
+        display: none;
+    }
+
+    .left{
+        margin: 0;
+    }
+
+    h3.fh3{
+        display: none;
+    }
+}
+
+@media screen and (max-height: 765px){
+    header{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1025px){
+    .div{
+        margin: 3.5rem 8rem 0 8rem;
+    }
+    section.second{
+        height: 124vh;
+    }
+}
+
+@media screen and (max-width: 800px){
+    section.second{
+        padding: 3rem;
+    }
+
+    .fh1{
+        font-size: 3rem;
+    }
+
+    .title{
+        font-size: 2.3rem;
+    }
+
+    .sub-title{
+        font-size: 1.2rem;
+    }
+
+    .text{
+        font-size: 1.4rem;
+        margin: 2rem 0 2rem 0;
+    }
+
+    .ti-2{
+        margin-top: 2rem;
+    }
+
+    .title-2{
+        font-size: 1.6rem;
+    }
+
+    .sub-title-2{
+        font-size: 1.2rem;
+    }
+
+    .text-2{
+        font-size: 1.4rem;
+        margin: 1rem 0 2rem 0;
+    }
+
+    .d-a{
+        width: 2%;
+        bottom: 5%;
+    }
+}
+
+@media screen and (max-width: 590px){
+    section.second{
+        height: 130vh;
+    }
+
+    .title{
+        font-size: 2rem;
+    }
+
+    .sub-title{
+        font-size: 1.1rem;
+    }
+
+    .text{
+        font-size: 1.2rem;
+    }
+
+    .ti-2{
+        margin-top: 1.6rem;
+    }
+
+    .title-2{
+        font-size: 1.4rem;
+    }
+
+    .sub-title-2{
+        font-size: 1.1rem;
+    }
+
+    .text-2{
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 455px){
+    .fh1{
+        font-size: 2.5rem;
+    }
+
+    section.second{
+        padding: 2.5rem;
+        height: 140vh;
+    }
+
+    section.second:last-child{
+        height: 80vh;
+    }
+}
+
+@media screen and (max-width: 390px){
+    .fh1{
+        font-size: 2rem;
+    }
+
+    .title{
+        font-size: 1.8rem;
+    }
+
+    .sub-title{
+        font-size: 1rem;
+    }
+
+    .text{
+        font-size: 1.1rem;
+    }
+
+    .ti-2{
+        margin-top: 1.4rem;
+    }
+
+    .title-2{
+        font-size: 1.3rem;
+    }
+
+    .sub-title-2{
+        font-size: 1.05rem;
+    }
+
+    .text-2{
+        font-size: 1.05rem;
+    }
+}
+
+@media screen and (max-width: 340px){
+    .fh1{
+        font-size: 1.6rem;
+    }
+
+    section.second{
+        height: 163vh;
+    }
+}
+
+@media screen and (max-width: 300px){
+    section.second{
+        height: 180vh;
+    }
+
+    .fh1{
+        font-size: 1.3rem;
+    }
+
+    .title{
+        font-size: 1.5rem;
+    }
+
+    .sub-title{
+        font-size: 0.7rem;
+    }
+
+    .text{
+        font-size: 1rem;
+    }
+
+    .ti-2{
+        margin-top: 1.15rem;
+    }
+
+    .title-2{
+        font-size: 1.15rem;
+    }
+
+    .sub-title-2{
+        font-size: 1rem;
+    }
+
+    .text-2{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 340px) and (max-height: 690px){
+    section.second{
+        height: 215vh;
+    }
+}
+
+@media screen and (max-height: 740px){
+    section.second{
+        height: 150vh;
+    }
+}
+
+@media screen and (max-height: 690px){
+    section.second{
+        height: 180vh;
+    }
+}
+
+@media screen and (max-height: 640px){
+    section.second{
+        height: 160vh;
+    }
+}
